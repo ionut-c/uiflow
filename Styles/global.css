@@ -1,3 +1,12 @@
+/*************************************
+Main less file used for imports
+*************************************/
+/*************************************
+Variables used across less
+*************************************/
+/*************************************
+Main layout styling
+*************************************/
 html,
 body,
 #sidebar-wrapper,
@@ -14,99 +23,9 @@ body {
 #wrapper {
   background-color: #bfbfbf;
 }
-#sidebar-wrapper {
-  padding: 40px 0px;
-}
-#sidebar-wrapper #sidebar-nav {
-  font-size: 11px;
-}
-.remove-padding-left-right {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.form-fields {
-  height: 25px;
-  border-radius: 8px;
-  color: #000;
-  border: 1px solid;
-  text-transform: uppercase;
-}
-#page-content-wrapper {
-  padding: 45px 0px;
-  background-color: #f2f2f2;
-  min-height: 500px;
-}
-#page-content-wrapper .form-horizontal {
-  font-size: 9px;
-}
-#page-content-wrapper .form-horizontal .control-label {
-  text-align: left;
-}
-#page-content-wrapper .form-horizontal .form-control {
-  font-size: 9px;
-}
-#page-content-wrapper .form-horizontal .checkbox input[type=checkbox] {
-  margin-top: 0px;
-}
-#page-content-wrapper .form-horizontal .input-sm {
-  height: 25px;
-  border-radius: 8px;
-  color: #000;
-  border: 1px solid;
-  text-transform: uppercase;
-}
-#page-content-wrapper .form-horizontal .col-sm-2 {
-  padding-left: 0px;
-  top: 10px;
-}
-#page-content-wrapper .form-horizontal .col-sm-10,
-#page-content-wrapper .form-horizontal .submit-btn {
-  float: right;
-  padding-right: 0px;
-}
-#page-content-wrapper .form-horizontal .back-button {
-  color: #187DC5;
-}
-#page-content-wrapper .form-horizontal .form-group {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-#page-content-wrapper .head-content {
-  text-transform: uppercase;
-  font-size: 9px;
-  margin-bottom: 20px;
-}
-#page-content-wrapper .balance {
-  padding-left: 0px;
-  padding-right: 0px;
-  text-align: center;
-}
-#page-content-wrapper .cash {
-  padding-left: 0px;
-  padding-right: 0px;
-  text-align: center;
-}
-#page-content-wrapper .col-sm-8,
-#page-content-wrapper .col-sm-4,
-#page-content-wrapper .col-md-9,
-#page-content-wrapper .col-sm-11 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.amount {
-  font-size: 10px;
-}
-.terms {
-  font-size: 7px;
-  margin-bottom: 15px;
-}
-#signup {
-  border: 1px solid;
-  padding: 2px 10px;
-  border-radius: 0px;
-}
-/*
-	begin - top navbar old */
+/*************************************
+Header styling
+*************************************/
 #logo {
   margin: 24px 0 14px 0;
   border: 0;
@@ -278,9 +197,15 @@ nav ul li a:focus {
     text-decoration: none;
   }
 }
-/*
-	end - top navbar old
-*/
+/*************************************
+Sidebar styling
+*************************************/
+#sidebar-wrapper {
+  padding: 40px 0px;
+}
+#sidebar-wrapper #sidebar-nav {
+  font-size: 11px;
+}
 #sidebar-wrapper ul li {
   list-style-type: none;
 }
@@ -299,15 +224,103 @@ ul.second-menu {
 #sidebar-wrapper a {
   color: #000;
 }
+#primary-menu .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+/*************************************
+Main div layout
+*************************************/
+.remove-padding-left-right {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.form-fields {
+  height: 25px;
+  border-radius: 8px;
+  color: #000;
+  border: 1px solid;
+  text-transform: uppercase;
+}
+#page-content-wrapper {
+  padding: 45px 0px;
+  background-color: #f2f2f2;
+  min-height: 500px;
+}
+#page-content-wrapper .form-horizontal {
+  font-size: 9px;
+}
+#page-content-wrapper .form-horizontal .control-label {
+  text-align: left;
+}
+#page-content-wrapper .form-horizontal .form-control {
+  font-size: 9px;
+}
+#page-content-wrapper .form-horizontal .checkbox input[type=checkbox] {
+  margin-top: 0px;
+}
+#page-content-wrapper .form-horizontal .input-sm {
+  height: 25px;
+  border-radius: 8px;
+  color: #000;
+  border: 1px solid;
+  text-transform: uppercase;
+}
+#page-content-wrapper .form-horizontal .col-sm-2 {
+  padding-left: 0px;
+  top: 10px;
+}
+#page-content-wrapper .form-horizontal .col-sm-10,
+#page-content-wrapper .form-horizontal .submit-btn {
+  float: right;
+  padding-right: 0px;
+}
+#page-content-wrapper .form-horizontal .back-button {
+  color: #187DC5;
+}
+#page-content-wrapper .form-horizontal .form-group {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#page-content-wrapper .head-content {
+  text-transform: uppercase;
+  font-size: 9px;
+  margin-bottom: 20px;
+}
+#page-content-wrapper .balance {
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+#page-content-wrapper .cash {
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+#page-content-wrapper .col-sm-8,
+#page-content-wrapper .col-sm-4,
+#page-content-wrapper .col-md-9,
+#page-content-wrapper .col-sm-11 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.amount {
+  font-size: 10px;
+}
+.terms {
+  font-size: 7px;
+  margin-bottom: 15px;
+}
+#signup {
+  border: 1px solid;
+  padding: 2px 10px;
+  border-radius: 0px;
+}
 #content-title {
   background-color: #bfbfbf;
   font-size: 9px;
   text-transform: uppercase;
   font-weight: normal;
-}
-#primary-menu .active {
-  font-weight: bold;
-  text-decoration: underline;
 }
 .transactions-table {
   /*	line-height: 1.5;*/
@@ -510,3 +523,6 @@ input.cmn-toggle-round-flat:checked + label:after {
 .form-group.switch .text-uppercase {
   padding: 4px 0 0;
 }
+/*************************************
+Footer styling
+*************************************/
