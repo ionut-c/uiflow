@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>MoneyPod</title>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,900" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="Styles/style.css">
+</head>
+<body class="">
+	 <button id="menuToggler">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </button>
+
+	<nav>
+        <div class="row">
+            <div class="col-sm-3"><a href="Home.aspx"><img id="logo" src="Images/moneypod_logo.png" /></a></div>
+            <div class="col-sm-9">
+                <div class="col-md-9 col-sm-11 navbar-menu">
+                    <ul>
+                        <li><a href="OurStory.aspx">Our Story</a></li>
+                        <li><a href="ContactUs.aspx">Sign in</a></li>
+                        <li><a href="ContactUs.aspx" id="signup">Sign up</a></li>
+                    </ul>  
+                </div>    
+            </div>
+        </div>
+    </nav> 
+	<div class="container-fluid" id="wrapper">
+		<div class="row">
+			<div class="col-sm-3" id="sidebar-wrapper">
+				<div class="col-sm-offset-1 col-sm-11 col-md-9" id="sidebar-nav">
+					<p>Step 2 of 5: Personal Information</p>
+					<p>- We ask for your social security number to validate your identity.</p>
+				</div>
+			</div>
+			<div class="col-sm-9" id="page-content-wrapper">
+				<div class="col-sm-offset-1 col-sm-10" id="page-content">
+					
+					<form class="form-horizontal col-sm-12 col-md-8">
+						<p class="terms">Please use permanent home address for the information below</p>
+						<div class="form-group">
+						    <label for="street" class="col-sm-4 control-label text-uppercase">Street</label>
+						    <div class="col-sm-8">
+						      <input type="text" class="form-control text-uppercase input-sm" id="street" placeholder="">
+						    </div>
+						</div>
+						<div class="form-group">
+						    <label for="city" class="col-sm-4 control-label text-uppercase">City</label>
+						    <div class="col-sm-8">
+						      <input type="text" class="form-control text-uppercase input-sm" id="city" placeholder="">
+						    </div>
+						</div>
+						<div class="form-group">
+						    <label for="state" class="col-sm-4 control-label text-uppercase">State</label>
+						    <div class="col-sm-8">
+						      <input type="text" class="form-control text-uppercase input-sm" id="state" placeholder="">
+						    </div>
+						</div>
+						<div class="form-group">
+						    <label for="zip" class="col-sm-4 control-label text-uppercase">Zip Code</label>
+						    <div class="col-sm-8">
+						      <input type="text" class="form-control text-uppercase input-sm" id="zip" placeholder="">
+						 	</div>
+						</div>
+						<div class="form-group">
+						    <label for="mobile" class="col-sm-4 control-label text-uppercase">Mobile Number</label>
+						    <div class="col-sm-8">
+						      <input type="text" class="form-control text-uppercase input-sm" id="mobile" placeholder="">
+						    </div>
+						</div>
+						<div class="form-group">
+						    <div class="col-sm-offset-1 col-sm-11">
+						      <div class="checkbox">
+						        <label class="terms">
+						          <input type="checkbox">I agree to receive automated marketing text messages from or on behalf of MoneyPod at the phone number provided.  I understand that consent  is not a condition of any purchase.
+						        </label>
+						        <p class="terms">By giving us your mobile phone number, we have your permission to contact you about your account at that number using text messages, prerecorded voice messages and automatic dialing technology, Message and data rates may apply.</p>
+						      </div>
+						    </div>
+						</div>
+						<div class="form-group">
+						  	<div class="col-sm-2">
+						      <a href="#" class="back-button text-uppercase">Back</a>
+						    </div>
+						    <div class="col-sm-10">
+						      <button type="submit" class="btn text-uppercase">Continue</button>
+						    </div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="Scripts/main.js"></script>
+</body>
+</html>

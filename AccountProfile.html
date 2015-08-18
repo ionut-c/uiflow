@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MoneyPod</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,900" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+     <button id="menuToggler">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </button>
+
+    <nav>
+        <div class="row">
+            <div class="col-sm-3"><a href="Home.aspx"><img id="logo" src="Images/moneypod_logo.png" /></a></div>
+            <div class="col-sm-9">
+                <div class="col-md-9 col-sm-11 navbar-menu">
+                    <ul>
+                        <li><a href="OurStory.aspx">Our Story</a></li>
+                        <li><a href="ContactUs.aspx">Sign in</a></li>
+                        <li><a href="ContactUs.aspx" id="signup">Sign up</a></li>
+                    </ul>  
+                </div>    
+            </div>
+        </div>
+    </nav> 
+    <div class="container-fluid" id="wrapper">
+        <div class="row">
+            <div class="col-sm-3" id="sidebar-wrapper">
+                <div class="col-sm-offset-1 col-sm-11 col-md-9" id="sidebar-nav">
+                    <ul id="primary-menu">
+                        <li><a href="#transaction">Transaction</a></li>
+                        <li><a href="#deposit">Deposit</a>
+                            <ul class="second-menu hidden">
+                                <li><a href="#transfer">Transfer from bank</a></li>
+                                <li><a href="#depositchecks">Deposit checks</a></li>
+                                <li><a href="#request">Request from friends</a></li>
+                                <li><a href="#direct">Set up direct deposit</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#pay">Pay</a></li>
+                        <li><a href="#account">Account</a>
+                            <ul class="second-menu hidden">
+                                <li><a href="#accountprofile">Account Profile</a></li>
+                                <li><a href="#accountsettings">Account Settings</a></li>
+                                <li><a href="#moneypodoffers">Moneypod Offers</a></li>
+                                <li><a href="#debitcard">Debit Card</a></li>
+                                <li><a href="#atmlocators">Atm Locators</a></li>
+                                <li><a href="#legal">Legal, Fees & Statements</a></li>
+                                <li><a href="#invite">Invite Friends</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-9" id="page-content-wrapper">
+               <div class="col-sm-offset-1 col-sm-10" id="page-content">
+                    <div class="head-content col-md-8 col-sm-12">
+                        <div class="col-sm-4 balance">
+                            <p>Account Balance</p>
+                            <p class="amount">$ 965.77</p>
+                        </div>    
+                        <div class="col-sm-8 cash">
+                            <p>Cash Back</p>
+                            <p class="amount">$ 22.59</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-11 transactions-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="2" id="content-title">Account profile</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="col-sm-offset-1 col-sm-10" id="page-content">
+                    <table class="col-sm-11 col-md-7 account">
+                        <tr>
+                            <td colspan="3" class="text-uppercase"><strong>Moneypod Account</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Customers Bank</td>
+                            <td>22222222</td>
+                            <td>2123123123</td>
+                        </tr>
+                        <tr class="account-label text-uppercase">
+                            <td>Bank Name</td>
+                            <td>Routing Number</td>
+                            <td>Account Number</td>
+                        </tr>
+                    </table>
+
+                    <table class="col-sm-12 col-md-8 contact-info">
+                        <tr>
+                            <td colspan="3" class="text-uppercase"><strong>Contact Information</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sm-4">Street Address</td>
+                            <td class="col-sm-8">595 Torrance Ave</td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td>Torrance</td>
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>Zip Code</td>
+                            <td>295505</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Number</td>
+                            <td>695505</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>weijiang1977@gmail.com</td>
+                        </tr>
+                    </table>
+
+                    <div class="col-sm-12 col-md-8 submit-btn">
+                        <button type="submit" class="btn text-uppercase">Edit</button>
+                    </div> 
+                </div>                   
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="Scripts/main.js"></script>
+</body>
+</html>

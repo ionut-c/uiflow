@@ -1,0 +1,48 @@
+#page-content-wrapper,#sidebar-wrapper,.container-fluid,.row,body,html{height:100%}body{padding-top:68px;font-size:9px;font-family:Lato,'Arial Black',sans-serif}#wrapper{background-color:#bfbfbf}#sidebar-wrapper{padding:40px 0}#sidebar-wrapper #sidebar-nav{font-size:11px}.remove-padding-left-right{padding-left:0;padding-right:0}.form-fields{height:25px;border-radius:8px;color:#000;border:1px solid;text-transform:uppercase}#page-content-wrapper{padding:45px 0;background-color:#f2f2f2;min-height:500px}#page-content-wrapper .form-horizontal{font-size:9px}#page-content-wrapper .form-horizontal .control-label{text-align:left}#page-content-wrapper .form-horizontal .form-control{font-size:9px}#page-content-wrapper .form-horizontal .checkbox input[type=checkbox]{margin-top:0}#page-content-wrapper .form-horizontal .input-sm{height:25px;border-radius:8px;color:#000;border:1px solid;text-transform:uppercase}#page-content-wrapper .form-horizontal .col-sm-2{padding-left:0;top:10px}#page-content-wrapper .form-horizontal .col-sm-10,#page-content-wrapper .form-horizontal .submit-btn{float:right;padding-right:0}#page-content-wrapper .form-horizontal .back-button{color:#187DC5}#page-content-wrapper .form-horizontal .form-group{margin-left:0;margin-right:0}#page-content-wrapper .head-content{text-transform:uppercase;font-size:9px;margin-bottom:20px}#page-content-wrapper .balance,#page-content-wrapper .cash{padding-left:0;padding-right:0;text-align:center}#page-content-wrapper .col-md-9,#page-content-wrapper .col-sm-11,#page-content-wrapper .col-sm-4,#page-content-wrapper .col-sm-8{padding-left:0;padding-right:0}.amount{font-size:10px}.terms{font-size:7px;margin-bottom:15px}#signup{border:1px solid;padding:2px 10px;border-radius:0}#logo{margin:24px 0 14px;border:0;height:30px;width:auto}nav{background:#000028;position:fixed;left:0;top:0;right:0;z-index:1000;height:71px}nav .navbar-menu{padding:0}nav div{text-align:right}nav ul{float:right;list-style-type:none;padding-top:30px;margin:0}nav ul li{display:block;float:left;font-family:Lato,'Arial Black',sans-serif;font-size:12px;font-weight:500}nav ul li a{color:#fff;text-transform:uppercase;text-decoration:none;padding:0 2px;margin-left:30px;border-radius:2px;text-shadow:0 0 3px rgba(0,0,0,.6);transition:.2s all;font-size:8px}nav ul li a:focus,nav ul li a:hover,nav ul li.active a{border-bottom:1px solid #fff;color:#fff;text-decoration:none}#menuToggler{position:fixed;display:none;top:13px;z-index:1001;right:0}#menuToggler:focus{outline:0}.menu-line{width:20px;height:2px;background:#fff;margin:4px 0;-o-transition:all .2s ease-out;-moz-transition:all .2s ease-out;-webkit-transition:all .2s ease-out;-ms-transition:all .2s ease-out;transition:all .2s ease-out}.menu-expanded .menu-line:not(:first-child):not(:last-child){opacity:0}.menu-expanded .menu-line:first-child{height:3px;-o-transform:rotate(-135deg);-moz-transform:rotate(-135deg);-webkit-transform:rotate(-135deg);-ms-transform:rotate(-135deg);transform:rotate(-135deg)}.menu-expanded .menu-line:last-child{-o-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);margin-top:-13px;height:3px}@media screen and (max-width:768px){body.menu-expanded{margin-top:114px}#menuToggler{display:block;background:0 0;border:0}button{vertical-align:top;color:#EEE;text-transform:uppercase;border:0;font-family:Lato,"Arial Black",sans-serif;font-size:14px;background:#000028;font-weight:700;line-height:22px;padding:4px 16px;margin-top:8px;transition:all .2s ease 0s;height:32px}nav{text-align:left;padding:0 16px;height:71px}nav ul{float:none;padding:3px 0 0;max-height:0;-o-transition:all .2s ease;-moz-transition:all .2s ease;-webkit-transition:all .2s ease;-ms-transition:all .2s ease;transition:all .2s ease;display:block;margin:0 -16px;overflow:hidden}nav ul li.active a{border:none;background:#444}.menu-expanded nav ul{max-height:114px}#contact .center{padding:20px 16px 0}nav ul li{display:block;width:100%;text-align:left}nav ul li a{text-indent:16px;font-size:14px;display:block;background:#7F7F7F;margin:0;border-radius:0;width:100%;line-height:38px;height:38px}nav ul li a:hover{border-bottom:0;background:#444;text-decoration:none}}#sidebar-wrapper ul li{list-style-type:none}#sidebar-nav>ul>li{margin-bottom:25px}#primary-menu{font-size:11px;padding-left:0;text-transform:uppercase}ul.second-menu{font-size:9px;padding-left:15px}#sidebar-wrapper a{color:#000}#content-title{background-color:#bfbfbf;font-size:9px;text-transform:uppercase;font-weight:400}#primary-menu .active{font-weight:700;text-decoration:underline}.transactions-table{background-color:#fff;font-size:9px}.transactions-table .table{margin-bottom:0}.transactions-table .table tbody>tr:last-child{border-bottom:1px solid #ddd}.transactions-table .table td:first-child,.transactions-table .table th{padding-left:85px;width:60%}.transactions-table .table td:nth-child(2){text-align:center}.transactions-table .date{background-color:#f2f2f2;font-size:7px}.transactions-table .deposit{color:#00b050}.transactions-table .outgoing{color:red}.transfer-form{margin-top:60px}.transfer-form select{background-color:#fff;width:100%;text-align:left;padding:5px;height:25px;border-radius:8px;color:#000;border:1px solid;text-transform:uppercase}.transfer-form .dropdown-menu{top:23px;width:100%}.transfer-form .form-group{margin-bottom:30px}.caret{float:right;top:5px;position:relative}.btn{background-color:#000028;color:#fff;font-size:9px;border-radius:8px;float:right}.btn:focus,.btn:hover{color:#fff}#collapse-box{font-size:12px}#page-content .account{margin:20px 15px 0}#page-content .account td{border:none;padding:10px 0}#page-content .account .account-label td{font-size:7px;padding:0}#page-content .account .account-label td:first-child{padding-left:10px}#page-content .account td:nth-child(2),#page-content .account td:nth-child(3){text-align:center}#page-content .contact-info{margin:20px 15px 0}#page-content .contact-info td{border:none;padding:10px 0}#page-content .contact-info td:first-child{text-transform:uppercase}.submit-btn .btn{padding-left:25px;padding-right:25px;margin:20px 0}@media screen and (max-width:991px){.transactions-table .table td:first-child{width:85%}}
+
+
+#accordion .panel-default > .panel-heading {
+	background: #ffffff;
+	padding: 0;
+	border-top: 1px solid #DDD;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+#accordion .panel-title {
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 1.42857;
+}
+
+#accordion .panel-title a {
+    display: block;
+    padding: 8px 85px;
+}
+
+#accordion .panel {
+	border: none;
+	box-shadow: none;
+}
+
+#accordion .panel .panel-body {
+	background: #F2F2F2;
+	padding: 0;
+}
+
+.panel-group .panel + .panel {
+	margin-top: 0;
+}
+
+#accordion .panel-default:last-child {
+	border-bottom: 1px solid #DDD;
+}
+
+#accordion .panel-heading.active {
+	background: #BFBFBF;
+}
+
+#accordion .panel-heading.active .panel-title {
+	font-size: 9px;
+	font-weight: 400;
+}
