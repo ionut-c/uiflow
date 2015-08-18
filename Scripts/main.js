@@ -22,11 +22,6 @@ $('ul#primary-menu a').click(function () {
 	
 });
 
-// $('#collapse-box tr').click(function () {
-// 	$(this).next().toggleClass('hidden');
-// });
-
-
 $('#accordion')
   .on('show.bs.collapse', function(e) {
     $(e.target).prev('.panel-heading').addClass('active');

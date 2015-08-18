@@ -496,3 +496,106 @@ ul.second-menu {
 		width: 85%;
 	}
 }
+
+#accordion .panel-default > .panel-heading {
+	background: #ffffff;
+	padding: 0;
+	border-top: 1px solid #DDD;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+#accordion .panel-title {
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 1.42857;
+}
+
+#accordion .panel-title a {
+    display: block;
+    padding: 8px 19% 8px 85px;
+}
+
+#accordion .panel-title span {
+    float: right;
+}
+
+#accordion .panel {
+	border: none;
+	box-shadow: none;
+}
+
+#accordion .panel .panel-body {
+	background: #F2F2F2;
+	padding: 0;
+}
+
+.panel-group .panel + .panel {
+	margin-top: 0;
+}
+
+#accordion .panel-default:last-child {
+	border-bottom: 1px solid #DDD;
+}
+
+#accordion .panel-heading.active {
+	background: #BFBFBF;
+}
+
+#accordion .panel-heading.active .panel-title {
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  background-color: #dddddd;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:before,
+input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 52px;
+  background-color: #dddddd;
+  border-radius: 52px;
+  transition: margin 0.4s, background 0.4s;
+}
+input.cmn-toggle-round-flat:checked + label {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 60px;
+  background-color: #8ce196;
+}

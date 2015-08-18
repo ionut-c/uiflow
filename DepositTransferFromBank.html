@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>MoneyPod</title>
+  <title>MoneyPod</title>
 
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,900" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="Styles/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="Styles/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body class="">
-	 <button id="menuToggler">
+   <button id="menuToggler">
         <div class="menu-line"></div>
         <div class="menu-line"></div>
         <div class="menu-line"></div>
     </button>
 
-	<nav>
+  <nav>
         <div class="row">
             <div class="col-sm-3"><a href="Home.aspx"><img id="logo" src="Images/moneypod_logo.png" /></a></div>
             <div class="col-sm-9">
@@ -34,14 +34,14 @@
             </div>
         </div>
     </nav> 
-	<div class="container-fluid" id="wrapper">
-		<div class="row">
-			<div class="col-sm-3" id="sidebar-wrapper">
-				<div class="col-sm-offset-1 col-sm-11 col-md-9" id="sidebar-nav">
-					<ul id="primary-menu">
+  <div class="container-fluid" id="wrapper">
+    <div class="row">
+      <div class="col-sm-3" id="sidebar-wrapper">
+        <div class="col-sm-offset-1 col-sm-11 col-md-9" id="sidebar-nav">
+          <ul id="primary-menu">
                         <li><a href="#transaction">Transaction</a></li>
                         <li><a href="#deposit">Deposit</a>
-                        	<ul class="second-menu hidden">
+                          <ul class="second-menu hidden">
                                 <li><a href="#transfer">Transfer from bank</a></li>
                                 <li><a href="#depositchecks">Deposit checks</a></li>
                                 <li><a href="#request">Request from friends</a></li>
@@ -61,157 +61,117 @@
                             </ul>
                         </li>
                     </ul>
-				</div>
-			</div>
-			<div class="col-sm-9" id="page-content-wrapper">
-				<div class="col-sm-offset-1 col-sm-10" id="page-content">
-					<div class="head-content col-md-8 col-sm-12">
-                        <div class="col-sm-4 balance">
-                            <p>Account Balance</p>
-                            <p class="amount">$ 965.77</p>
-                        </div>    
-                        <div class="col-sm-8 cash">
-                            <p>Cash Back</p>
-                            <p class="amount">$ 22.59</p>
-                        </div>
-                    </div>
-				</div>
-				<div class="col-md-9 col-sm-11 transactions-table">
-                   	<table class="table">
-                   		<thead>
-					    	<tr>
-					        	<th colspan="2" id="content-title">Transfer from bank</th>
-					      	</tr>
-					    </thead>
-					</table>
-                </div>
+        </div>
+      </div>
+      <div class="col-sm-9" id="page-content-wrapper">
+        <div class="col-md-9">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#transferBank" aria-expanded="true" aria-controls="transferBank">
+                    Transfer from bank
+                    <span>+</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="transferBank" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
                 <div class="col-sm-offset-1 col-sm-10 transfer-form">
-                	<form class="form-horizontal col-sm-12 col-md-8">
-						<div class="form-group">
-						    <label for="zip" class="col-sm-4 control-label text-uppercase">Transfer from</label>
-						    <div class="col-sm-8">
-							  	<select>
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="opel">Opel</option>
-									<option value="audi">Audi</option>
-								</select>
-						 	</div>
-						</div>
-						<div class="form-group">
-						    <label for="mobile" class="col-sm-4 control-label text-uppercase">Transfer amount</label>
-						    <div class="col-sm-8">
-						      <input type="text" class="form-control text-uppercase input-sm" id="mobile" placeholder="">
-						    </div>
-						</div>
-						<div class="form-group">
-						    <div class="col-sm-12 submit-btn">
-						      <button type="submit" class="btn text-uppercase">Submit</button>
-						    </div>
-						</div>
-					</form>
-	            </div>
-	            <div class="col-md-9 col-sm-11 transactions-table text-uppercase" id="collapse-box">	            	
-                   	<table class="table">
-					    <tbody>
-					    	<tr>
-					        	<td>Link Bank Account</td>
-	                            <td>+</td>
-					      	</tr>
-					      	<tr>
-					        	<td>Validate Bank Account</td>
-	                            <td>+</td>
-					      	</tr>
-					      	<tr>
-					        	<td>Linked Bank Accounts</td>
-	                            <td>+</td>
-					      	</tr>
-					      	<tr>
-					        	<td>Transaction History</td>
-	                            <td>+</td>
-					      	</tr>
-					    </tbody>
-					</table>
-                </div> 
-
-<div class="col-md-9">
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Transfer from bank
-          <span>+</span>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-	    <div class="col-sm-offset-1 col-sm-10 transfer-form">
-	    	<form class="form-horizontal col-sm-12 col-md-11">
-				<div class="form-group">
-				    <label for="zip" class="col-sm-4 control-label text-uppercase">Transfer from</label>
-				    <div class="col-sm-8">
-					  	<select>
-							<option value="volvo">Volvo</option>
-							<option value="saab">Saab</option>
-							<option value="opel">Opel</option>
-							<option value="audi">Audi</option>
-						</select>
-				 	</div>
-				</div>
-				<div class="form-group">
-				    <label for="mobile" class="col-sm-4 control-label text-uppercase">Transfer amount</label>
-				    <div class="col-sm-8">
-				      <input type="text" class="form-control text-uppercase input-sm" id="mobile" placeholder="">
-				    </div>
-				</div>
-				<div class="form-group">
-				    <div class="col-sm-12 submit-btn">
-				      <button type="submit" class="btn text-uppercase">Submit</button>
-				    </div>
-				</div>
-			</form>
-	    </div>
+                  <form class="form-horizontal col-sm-12 col-md-11">
+                  <div class="form-group">
+                      <label for="zip" class="col-sm-4 control-label text-uppercase">Transfer from</label>
+                      <div class="col-sm-8">
+                        <select>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="mobile" class="col-sm-4 control-label text-uppercase">Transfer amount</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control text-uppercase input-sm" id="mobile" placeholder="">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="col-sm-12 submit-btn">
+                        <button type="submit" class="btn text-uppercase">Submit</button>
+                      </div>
+                  </div>
+                </form>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#linkAccount" aria-expanded="false" aria-controls="linkAccount">
+                    Link Bank Account
+                    <span>+</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="linkAccount" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Link Bank Account description
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#validateAccount" aria-expanded="false" aria-controls="validateAccount">
+                    Validate Bank Account
+                    <span>+</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="validateAccount" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  Validate Bank Account description
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#linkedAccounts" aria-expanded="false" aria-controls="linkedAccounts">
+                    Linked Bank Accounts
+                    <span>+</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="linkedAccounts" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  Linked Bank Accounts description
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#transactionHistory" aria-expanded="false" aria-controls="transactionHistory">
+                    Transaction History
+                    <span>+</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="transactionHistory" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  Transaction History description
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 
-
-			</div>
-		</div>
-	</div>
-
-	<script src="Scripts/main.js"></script>
+  <script src="Scripts/main.js"></script>
 </body>
 </html>
