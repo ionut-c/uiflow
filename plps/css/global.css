@@ -1,0 +1,24 @@
+/*************************************
+Main sass file used for imports
+*************************************/
+/*************************************
+Variables used across the website
+*************************************/
+.sprite-sprite, .sprite-delete-me {
+  background-image: url('/img/../img/sprite-s5987e8f5f1.png');
+  background-repeat: no-repeat;
+}
+
+.sprite-delete-me {
+  background-position: 0 0;
+}
+
+/*************************************
+Header styling
+*************************************/
+/*************************************
+Main layout styling
+*************************************/
+/*************************************
+Footer styling
+*************************************/
