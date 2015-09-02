@@ -16,9 +16,90 @@ Variables used across the website
 /*************************************
 Header styling
 *************************************/
+.header .primary-nav {
+  background: #E5F8FE;
+  height: 130px;
+}
+.header .primary-nav .logos {
+  float: left;
+  margin-top: 28px;
+}
+.header .primary-nav .logos .logo {
+  display: block;
+  margin-top: 12px;
+}
+.header .primary-nav .logos .first {
+  vertical-align: top;
+  margin-right: 20px;
+}
+.header .primary-nav .utility-nav {
+  display: block;
+  float: right;
+  margin-top: 40px;
+}
+.header .primary-nav .utility-nav li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+.header .primary-nav .utility-nav li a {
+  font-size: 12px;
+  color: #666666;
+  text-decoration: none;
+}
+.header .primary-nav .utility-nav li a:hover {
+  text-decoration: underline;
+}
+.header .primary-nav .main-nav {
+  display: block;
+  float: right;
+}
+.header .primary-nav .main-nav li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 35px;
+}
+.header .primary-nav .main-nav li a {
+  font-size: 17px;
+  color: #0072bc;
+  text-decoration: none;
+}
+.header .primary-nav .main-nav li a:hover {
+  color: #00B7F2;
+}
+.header .primary-nav #search {
+  vertical-align: middle;
+}
+.header .sub-nav {
+  background: #ffffff;
+  height: 53px;
+}
+.header .sub-nav a {
+  font-size: 12px;
+  color: #666666;
+  letter-spacing: 1px;
+  padding: 19px 30px;
+  display: block;
+  border-left: 1px solid #F3F3F3;
+  border-right: 1px solid #F3F3F3;
+}
+.header .sub-nav a:hover {
+  color: #D92032;
+}
+
+body {
+  background: #ccc;
+}
+
 /*************************************
 Main layout styling
 *************************************/
+.wrapper {
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 /*************************************
 Footer styling
 *************************************/

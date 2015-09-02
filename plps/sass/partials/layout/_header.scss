@@ -1,3 +1,91 @@
 /*************************************
 Header styling
 *************************************/
+
+.header {
+	.primary-nav {
+		background: #E5F8FE;
+		height: 130px;
+
+		.logos {
+			float: left;
+			margin-top: 28px;
+
+			.logo {
+				display: block;
+				margin-top: 12px;
+			}
+
+			.first {
+				vertical-align: top;
+				margin-right: 20px;
+			}
+		}
+
+		.utility-nav {
+			display: block;
+			float: right;
+			margin-top: 40px;
+
+			li {
+				list-style: none;
+				display: inline-block;
+				margin-left: 30px;
+				a {
+					font-size: 12px;
+					color: #666666;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		.main-nav {
+			display: block;
+			float: right;
+
+			li {
+				list-style: none;
+				display: inline-block;
+				margin-left: 35px;
+
+				a {
+					font-size: 17px;
+					color: #0072bc;
+					text-decoration: none;
+					&:hover {
+						color: #00B7F2;
+					}
+				}
+			}
+		}
+		#search {
+			vertical-align: middle;
+		}
+	}
+
+	.sub-nav {
+		background: #ffffff;
+		height: 53px;
+
+		a {
+			font-size: 12px;
+			color: #666666;
+			letter-spacing: 1px;
+			padding: 19px 30px;
+			display: block;
+			border-left: 1px solid #F3F3F3;
+			border-right: 1px solid #F3F3F3;
+
+			&:hover {
+				color: #D92032;
+			}
+		}
+	}
+}
+
+body {
+	background: #ccc;
+}
