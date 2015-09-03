@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(".language").click(function() {
-    	$(".select-language").show();
+    	$(".select-language").toggle();
     });
 
     $("#search").click(function() {
