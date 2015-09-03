@@ -180,6 +180,30 @@ Header styling
 			}
 		}
 	}
+	.sticky-nav {
+		background: #00b6f0;
+		opacity: 0.9;
+
+		h2 {
+			color: #ffffff;
+			padding: 18px 0;
+			margin: 0;
+			font-size: 22px;
+			display: inline-block;
+		}
+		.button {
+			font-size: 12px;
+			color: #d92032;
+			letter-spacing: 0.75px;
+			padding: 0 30px;
+			margin: 8px 0 8px 35px;
+			min-width: 216px;
+			float: right;
+			background: #ffffff;
+			border-radius: 100px;
+			text-align: center;
+		}
+	}
 }
 
 body {
