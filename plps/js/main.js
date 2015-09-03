@@ -4,7 +4,7 @@ $(document).ready(function() {
     });
 
     $("#search").click(function() {
-    	$(".search-form").toggle();
+    	$(".search-form").slideToggle("slow");
     	$( ".search-form input" ).focus();
     });
     $(".close-search").click(function() {

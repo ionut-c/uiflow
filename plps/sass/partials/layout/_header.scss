@@ -76,6 +76,7 @@ Header styling
 		.main-nav {
 			display: block;
 			float: right;
+			margin: 20px 0 0 30px;
 
 			li {
 				list-style: none;
@@ -89,7 +90,7 @@ Header styling
 					&:hover {
 						color: #00B7F2;
 						border-bottom: 3px solid #00B7F2;
-						padding-bottom: 15px;
+						padding-bottom: 17px;
 					}
 				}
 			}
@@ -133,7 +134,7 @@ Header styling
 	}
 
 	.search-form {
-		height: 50px;
+		height: 80px;
 		display: none;
 		padding: 15px 25px;
 		background: rgba(242,242,242,1);
@@ -153,7 +154,7 @@ Header styling
 			padding: 0;
 			border: none;
 			height: 50px;
-			line-height: 45px;
+			line-height: 50px;
 		}
 
 		img,
@@ -163,6 +164,7 @@ Header styling
 
 		img {
 			margin-right: 20px;
+			margin-top: -10px;
 		}
 
 		form {
@@ -178,9 +180,11 @@ Header styling
 			color: #999999;
 			font-style: italic;
 			width: 663px;
-			height: 45px;
+			height: 50px;
 			border: none;
 			display: inline-block;
+			margin: 0;
+			box-shadow: none;
 		}
 	}
 
@@ -258,8 +262,4 @@ Header styling
 			}
 		}
 	}
-}
-
-body {
-	background: #ccc;
 }

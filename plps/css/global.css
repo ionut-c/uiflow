@@ -86,6 +86,7 @@ Header styling
 .header .primary-nav .main-nav {
   display: block;
   float: right;
+  margin: 20px 0 0 30px;
 }
 .header .primary-nav .main-nav li {
   list-style: none;
@@ -100,7 +101,7 @@ Header styling
 .header .primary-nav .main-nav li a:hover {
   color: #00B7F2;
   border-bottom: 3px solid #00B7F2;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 }
 .header .primary-nav #search {
   vertical-align: middle;
@@ -135,7 +136,7 @@ Header styling
   height: 50px;
 }
 .header .search-form {
-  height: 50px;
+  height: 80px;
   display: none;
   padding: 15px 25px;
   background: #f2f2f2;
@@ -155,7 +156,7 @@ Header styling
   padding: 0;
   border: none;
   height: 50px;
-  line-height: 45px;
+  line-height: 50px;
 }
 .header .search-form img,
 .header .search-form form {
@@ -163,6 +164,7 @@ Header styling
 }
 .header .search-form img {
   margin-right: 20px;
+  margin-top: -10px;
 }
 .header .search-form form a {
   padding: 0 25px;
@@ -174,9 +176,11 @@ Header styling
   color: #999999;
   font-style: italic;
   width: 663px;
-  height: 45px;
+  height: 50px;
   border: none;
   display: inline-block;
+  margin: 0;
+  box-shadow: none;
 }
 .header .sticky-nav {
   background: #00b6f0;
@@ -244,10 +248,6 @@ Header styling
 .header .sticky-nav-links ul li a.padding-lg {
   padding-left: 30px;
   padding-right: 30px;
-}
-
-body {
-  background: #ccc;
 }
 
 /*************************************
