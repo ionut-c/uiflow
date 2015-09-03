@@ -172,10 +172,6 @@ Header styling
   width: 50px;
   height: 50px;
 }
-<<<<<<< HEAD
-.header .sub-nav .close-search span:hover {
-  background-position: 0 50px;
-}
 .header .sticky-nav {
   background: #00b6f0;
   opacity: 0.9;
@@ -199,8 +195,6 @@ Header styling
   border-radius: 100px;
   text-align: center;
 }
-=======
->>>>>>> c532ca8b2174b8f8696e389cc1aeee51ef8e2d3c
 
 body {
   background: #ccc;
