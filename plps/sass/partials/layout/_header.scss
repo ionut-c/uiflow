@@ -13,12 +13,14 @@ Header styling
 
 			.logo {
 				display: block;
-				margin-top: 12px;
+				margin-top: 15px;
 			}
 
 			.first {
-				vertical-align: top;
 				margin-right: 20px;
+				img {
+					vertical-align: top;
+				}
 			}
 		}
 
@@ -100,6 +102,9 @@ Header styling
 	.sub-nav {
 		background: #ffffff;
 		height: 53px;
+		overflow: initial;
+		margin: 0;
+		padding: 0;
 
 		a {
 			font-size: 12px;
@@ -116,57 +121,6 @@ Header styling
 			}
 		}
 
-		.search-form {
-			height: 50px;
-			display: none;
-			padding: 15px 25px;
-			background: rgba(242,242,242,1);
-			background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
-			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,242,242,1)), color-stop(20%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
-			background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
-			background: -o-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
-			background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
-			background: linear-gradient(to bottom, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff', GradientType=0 );
-
-			a {
-				display: inline-block;
-				font-size: 14px;
-				color: #0072bc;
-				float: right;
-				padding: 0;
-				border: none;
-				height: 50px;
-				line-height: 45px;
-			}
-
-			img,
-			form {
-				display: inline-block;
-			}
-
-			img {
-				margin-right: 20px;
-			}
-
-			form {
-				a {
-					padding: 0 25px;
-					margin-left: 40px;
-				}
-			}
-
-			input {
-				background: transparent;
-				font-size: 30px;
-				color: #999999;
-				font-style: italic;
-				width: 663px;
-				height: 45px;
-				border: none;
-			}
-		}
-
 		.close-search {
 			padding: 0;
 			border: none;
@@ -177,6 +131,59 @@ Header styling
 			}
 		}
 	}
+
+	.search-form {
+		height: 50px;
+		display: none;
+		padding: 15px 25px;
+		background: rgba(242,242,242,1);
+		background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,242,242,1)), color-stop(20%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+		background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
+		background: -o-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
+		background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
+		background: linear-gradient(to bottom, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff', GradientType=0 );
+
+		a {
+			display: inline-block;
+			font-size: 14px;
+			color: #0072bc;
+			float: right;
+			padding: 0;
+			border: none;
+			height: 50px;
+			line-height: 45px;
+		}
+
+		img,
+		form {
+			display: inline-block;
+		}
+
+		img {
+			margin-right: 20px;
+		}
+
+		form {
+			a {
+				padding: 0 25px;
+				margin-left: 40px;
+			}
+		}
+
+		input {
+			background: transparent;
+			font-size: 30px;
+			color: #999999;
+			font-style: italic;
+			width: 663px;
+			height: 45px;
+			border: none;
+			display: inline-block;
+		}
+	}
+
 	.sticky-nav {
 		background: #00b6f0;
 		opacity: 0.9;
@@ -197,7 +204,6 @@ Header styling
 			min-width: 216px;
 			float: right;
 			background: #ffffff;
-			border-radius: 100px;
 			text-align: center;
 			text-decoration: none;
 		}
@@ -208,6 +214,7 @@ Header styling
 		ul {
 			padding: 0;
 			margin: 0;
+			font-size: 0;
 			li {
 				list-style: none;
 				display: inline-block;
@@ -215,8 +222,38 @@ Header styling
 					font-size: 12px;
 					color: #ffffff;
 					letter-spacing: 0.75px;
-					padding: 10px 8px;
+					padding: 5px 0;
 					display: block;
+					transition: all 0.2s;
+
+					&:hover {
+						background: rgba(255, 255, 255, 0.2);
+					}
+
+					&.active {
+						background: #ffffff;
+						color: #d92032;
+					}
+
+					&.padding-xs {
+						padding-left: 15px;
+						padding-right: 15px;
+					}
+
+					&.padding-sm {
+						padding-left: 20px;
+						padding-right: 20px;
+					}
+
+					&.padding-md {
+						padding-left: 25px;
+						padding-right: 25px;
+					}
+
+					&.padding-lg {
+						padding-left: 30px;
+						padding-right: 30px;
+					}
 				}
 			}
 		}

@@ -1,9 +1,12 @@
 /*************************************
 Main layout styling
 *************************************/
+body {
+	line-height: 1;
+}
 
 .wrapper {
 	max-width: 1000px;
-	padding: 0 10px;
+	margin: 0 10px;
 	margin: 0 auto;
 }

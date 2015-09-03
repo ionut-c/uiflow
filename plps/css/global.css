@@ -33,11 +33,13 @@ Header styling
 }
 .header .primary-nav .logos .logo {
   display: block;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 .header .primary-nav .logos .first {
-  vertical-align: top;
   margin-right: 20px;
+}
+.header .primary-nav .logos .first img {
+  vertical-align: top;
 }
 .header .primary-nav .utility-nav {
   display: block;
@@ -106,6 +108,9 @@ Header styling
 .header .sub-nav {
   background: #ffffff;
   height: 53px;
+  overflow: initial;
+  margin: 0;
+  padding: 0;
 }
 .header .sub-nav a {
   font-size: 12px;
@@ -120,7 +125,16 @@ Header styling
 .header .sub-nav a:hover {
   color: #00b7f2;
 }
-.header .sub-nav .search-form {
+.header .sub-nav .close-search {
+  padding: 0;
+  border: none;
+}
+.header .sub-nav .close-search span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.header .search-form {
   height: 50px;
   display: none;
   padding: 15px 25px;
@@ -133,7 +147,7 @@ Header styling
   background: linear-gradient(to bottom, #f2f2f2 0%, #f6f6f6 20%, white 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff', GradientType=0 );
 }
-.header .sub-nav .search-form a {
+.header .search-form a {
   display: inline-block;
   font-size: 14px;
   color: #0072bc;
@@ -143,18 +157,18 @@ Header styling
   height: 50px;
   line-height: 45px;
 }
-.header .sub-nav .search-form img,
-.header .sub-nav .search-form form {
+.header .search-form img,
+.header .search-form form {
   display: inline-block;
 }
-.header .sub-nav .search-form img {
+.header .search-form img {
   margin-right: 20px;
 }
-.header .sub-nav .search-form form a {
+.header .search-form form a {
   padding: 0 25px;
   margin-left: 40px;
 }
-.header .sub-nav .search-form input {
+.header .search-form input {
   background: transparent;
   font-size: 30px;
   color: #999999;
@@ -162,15 +176,7 @@ Header styling
   width: 663px;
   height: 45px;
   border: none;
-}
-.header .sub-nav .close-search {
-  padding: 0;
-  border: none;
-}
-.header .sub-nav .close-search span {
   display: inline-block;
-  width: 50px;
-  height: 50px;
 }
 .header .sticky-nav {
   background: #00b6f0;
@@ -192,7 +198,6 @@ Header styling
   min-width: 216px;
   float: right;
   background: #ffffff;
-  border-radius: 100px;
   text-align: center;
   text-decoration: none;
 }
@@ -203,6 +208,7 @@ Header styling
 .header .sticky-nav-links ul {
   padding: 0;
   margin: 0;
+  font-size: 0;
 }
 .header .sticky-nav-links ul li {
   list-style: none;
@@ -212,8 +218,32 @@ Header styling
   font-size: 12px;
   color: #ffffff;
   letter-spacing: 0.75px;
-  padding: 10px 8px;
+  padding: 5px 0;
   display: block;
+  transition: all 0.2s;
+}
+.header .sticky-nav-links ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.header .sticky-nav-links ul li a.active {
+  background: #ffffff;
+  color: #d92032;
+}
+.header .sticky-nav-links ul li a.padding-xs {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header .sticky-nav-links ul li a.padding-sm {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header .sticky-nav-links ul li a.padding-md {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.header .sticky-nav-links ul li a.padding-lg {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 body {
@@ -223,9 +253,13 @@ body {
 /*************************************
 Main layout styling
 *************************************/
+body {
+  line-height: 1;
+}
+
 .wrapper {
   max-width: 1000px;
-  padding: 0 10px;
+  margin: 0 10px;
   margin: 0 auto;
 }
 
