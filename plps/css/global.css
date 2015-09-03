@@ -257,6 +257,12 @@ body {
   line-height: 1;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .wrapper {
   max-width: 1000px;
   margin: 0 10px;
@@ -266,3 +272,25 @@ body {
 /*************************************
 Footer styling
 *************************************/
+footer .footer-links {
+  background: #ffffff;
+}
+footer .footer-links .footer-header {
+  border-bottom: 1px solid #ccc;
+}
+footer .footer-links .footer-heading {
+  color: #012d74;
+  font-size: 13px;
+  font-family: "OmnesHuggiesSemiBold";
+}
+footer .footer-links ul li a {
+  font-size: 13px;
+  color: #012d74;
+  font-family: "OmnesHuggiesMedium";
+}
+footer .footer-info-header {
+  background: #d5f0fc;
+}
+footer .footer-info {
+  background: #eaf7fe;
+}
