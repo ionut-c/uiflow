@@ -4,13 +4,17 @@ Main sass file used for imports
 /*************************************
 Variables used across the website
 *************************************/
-.sprite-sprite, .sprite-delete-me {
-  background-image: url('/img/../img/sprite-s5987e8f5f1.png');
+.sprite-sprite, .sprite-close, .sprite-delete-me {
+  background-image: url('/img/../img/sprite-s809e6ce80c.png');
   background-repeat: no-repeat;
 }
 
-.sprite-delete-me {
+.sprite-close {
   background-position: 0 0;
+}
+
+.sprite-delete-me {
+  background-position: 0 -100px;
 }
 
 /*************************************
@@ -50,6 +54,27 @@ Header styling
 .header .primary-nav .utility-nav li a:hover {
   text-decoration: underline;
 }
+.header .primary-nav .utility-nav li.language {
+  position: relative;
+}
+.header .primary-nav .utility-nav li.language ul,
+.header .primary-nav .utility-nav li.language li {
+  margin: 0;
+}
+.header .primary-nav .utility-nav li.language .select-language {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  padding: 10px 15px;
+  width: 120px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.4);
+}
+.header .primary-nav .utility-nav li.language .select-language li {
+  margin-bottom: 5px;
+}
 .header .primary-nav .main-nav {
   display: block;
   float: right;
@@ -66,6 +91,8 @@ Header styling
 }
 .header .primary-nav .main-nav li a:hover {
   color: #00B7F2;
+  border-bottom: 3px solid #00B7F2;
+  padding-bottom: 15px;
 }
 .header .primary-nav #search {
   vertical-align: middle;
@@ -82,9 +109,67 @@ Header styling
   display: block;
   border-left: 1px solid #F3F3F3;
   border-right: 1px solid #F3F3F3;
+  text-decoration: none;
 }
 .header .sub-nav a:hover {
-  color: #D92032;
+  color: #00b7f2;
+}
+.header .sub-nav .search-form {
+  height: 50px;
+  display: none;
+  padding: 15px 25px;
+  background: #f2f2f2;
+  background: -moz-linear-gradient(top, #f2f2f2 0%, #f6f6f6 20%, white 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #f2f2f2), color-stop(20%, #f6f6f6), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #f2f2f2 0%, #f6f6f6 20%, white 100%);
+  background: -o-linear-gradient(top, #f2f2f2 0%, #f6f6f6 20%, white 100%);
+  background: -ms-linear-gradient(top, #f2f2f2 0%, #f6f6f6 20%, white 100%);
+  background: linear-gradient(to bottom, #f2f2f2 0%, #f6f6f6 20%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff', GradientType=0 );
+}
+.header .sub-nav .search-form a {
+  display: inline-block;
+  font-size: 14px;
+  color: #0072bc;
+  float: right;
+  padding: 0;
+  border: none;
+  height: 50px;
+  line-height: 45px;
+}
+.header .sub-nav .search-form img,
+.header .sub-nav .search-form form {
+  display: inline-block;
+}
+.header .sub-nav .search-form img {
+  margin-right: 20px;
+}
+.header .sub-nav .search-form form a {
+  padding: 0 25px;
+  margin-left: 40px;
+}
+.header .sub-nav .search-form input {
+  background: transparent;
+  font-size: 30px;
+  color: #999999;
+  font-style: italic;
+  width: 663px;
+  height: 45px;
+  border: none;
+}
+.header .sub-nav .close-search {
+  padding: 0;
+  border: none;
+}
+.header .sub-nav .close-search span {
+  background-position: 0 0;
+  background-image: url("../img/sprite/close.png");
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.header .sub-nav .close-search span:hover {
+  background-position: 0 50px;
 }
 
 body {

@@ -25,7 +25,16 @@
         </div>
 
         <ul role="toolbar" class="utility-nav">
-          <li><a href="#">USA-English</a></li>
+          <li class="language">
+            <a href="#">USA - English</a>
+            <ul class="select-language" style="display: none">
+              <li><a href="#">USA - English</a></li>
+              <li><a href="#">USA - Español</a></li>
+              <li><a href="#">Canada - English</a></li>
+              <li><a href="#">Canada - Français</a></li>
+              <li><a href="#">See All Countries</a></li>
+            </ul>
+          </li>
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">Buy Now</a></li>
         </ul>
@@ -41,6 +50,14 @@
     <div class="sub-nav">
       <div class="wrapper">
         <a href="#">SIGN IN OR JOIN GOODNITES</a>
+        <div class="search-form">
+          <img src="img/search_icon.png" />
+          <form action="#" method="post">              
+              <input name="Search" placeholder="How can we help?" type="search">
+              <a href="#" type="submit">SEARCH</a>
+          </form>
+          <a href="#" class="close-search"><span></span></a>
+        </div>
       </div>
     </div>
   </header>
@@ -52,6 +69,6 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/unslider.js"></script>
     <!-- Custom Scripts -->
-    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
