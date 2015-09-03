@@ -5,7 +5,7 @@ Main sass file used for imports
 Variables used across the website
 *************************************/
 .sprite-sprite, .sprite-close, .sprite-search_icon {
-  background-image: url('/img/../img/sprite-s998081dbcb.png');
+  background-image: url('../img/sprite-s85f603233f.png');
   background-repeat: no-repeat;
 }
 
@@ -171,9 +171,6 @@ Header styling
   display: inline-block;
   width: 50px;
   height: 50px;
-}
-.header .sub-nav .close-search span:hover {
-  background-position: 0 50px;
 }
 
 body {
