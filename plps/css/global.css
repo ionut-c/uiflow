@@ -4,16 +4,19 @@ Main sass file used for imports
 /*************************************
 Variables used across the website
 *************************************/
-.sprite-sprite, .sprite-close, .sprite-delete-me {
-  background-image: url('/img/../img/sprite-s809e6ce80c.png');
+.sprite-sprite, .sprite-close, .sprite-search_icon {
+  background-image: url('/img/../img/sprite-s998081dbcb.png');
   background-repeat: no-repeat;
 }
 
 .sprite-close {
   background-position: 0 0;
 }
+.sprite-close:hover, .sprite-close.close-hover {
+  background-position: 0 -50px;
+}
 
-.sprite-delete-me {
+.sprite-search_icon {
   background-position: 0 -100px;
 }
 
@@ -75,6 +78,9 @@ Header styling
 .header .primary-nav .utility-nav li.language .select-language li {
   margin-bottom: 5px;
 }
+.header .primary-nav .utility-nav li.language .select-language li a:hover {
+  color: #8cb6e0;
+}
 .header .primary-nav .main-nav {
   display: block;
   float: right;
@@ -106,7 +112,7 @@ Header styling
   color: #666666;
   letter-spacing: 1px;
   padding: 19px 30px;
-  display: block;
+  display: inline-block;
   border-left: 1px solid #F3F3F3;
   border-right: 1px solid #F3F3F3;
   text-decoration: none;
@@ -162,8 +168,6 @@ Header styling
   border: none;
 }
 .header .sub-nav .close-search span {
-  background-position: 0 0;
-  background-image: url("../img/sprite/close.png");
   display: inline-block;
   width: 50px;
   height: 50px;

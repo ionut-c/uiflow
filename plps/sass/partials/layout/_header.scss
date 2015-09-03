@@ -61,6 +61,10 @@ Header styling
 
 						li {
 							margin-bottom: 5px;
+
+							a:hover {
+								color: #8cb6e0;
+							}
 						}
 					}
 				}
@@ -102,7 +106,7 @@ Header styling
 			color: #666666;
 			letter-spacing: 1px;
 			padding: 19px 30px;
-			display: block;
+			display: inline-block;
 			border-left: 1px solid #F3F3F3;
 			border-right: 1px solid #F3F3F3;
 			text-decoration: none;
@@ -167,8 +171,6 @@ Header styling
 			padding: 0;
 			border: none;
 			span {
-				background-position: 0 0;
-				background-image: url("../img/sprite/close.png");
 				display: inline-block;
 				width: 50px;
 				height: 50px;
