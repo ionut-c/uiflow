@@ -5,7 +5,7 @@ Main sass file used for imports
 Variables used across the website
 *************************************/
 .sprite-sprite, .sprite-close, .sprite-search_icon {
-  background-image: url('/img/sprite-s85f603233f.png');
+  background-image: url('../img/sprite-s85f603233f.png');
   background-repeat: no-repeat;
 }
 
@@ -223,6 +223,12 @@ body {
 /*************************************
 Main layout styling
 *************************************/
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .wrapper {
   max-width: 1000px;
   padding: 0 10px;
@@ -232,3 +238,25 @@ Main layout styling
 /*************************************
 Footer styling
 *************************************/
+footer .footer-links {
+  background: #ffffff;
+}
+footer .footer-links .footer-header {
+  border-bottom: 1px solid #ccc;
+}
+footer .footer-links .footer-heading {
+  color: #012d74;
+  font-size: 13px;
+  font-family: "OmnesHuggiesSemiBold";
+}
+footer .footer-links ul li a {
+  font-size: 13px;
+  color: #012d74;
+  font-family: "OmnesHuggiesMedium";
+}
+footer .footer-info-header {
+  background: #d5f0fc;
+}
+footer .footer-info {
+  background: #eaf7fe;
+}
