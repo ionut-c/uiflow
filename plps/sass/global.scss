@@ -5,7 +5,7 @@ Main sass file used for imports
 @import "partials/mixins/_variables";
 
 @import "compass/utilities/sprites";
-@import "../img/sprite/*.png";
+@import "sprite/*.png";
 @include all-sprite-sprites;
 
 @import "partials/layout/_header";
