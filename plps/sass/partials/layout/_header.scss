@@ -183,7 +183,7 @@ Header styling
 
 		h2 {
 			color: #ffffff;
-			padding: 18px 0;
+			padding: 12px 0;
 			margin: 0;
 			font-size: 22px;
 			display: inline-block;
@@ -192,13 +192,33 @@ Header styling
 			font-size: 12px;
 			color: #d92032;
 			letter-spacing: 0.75px;
-			padding: 0 30px;
+			padding: 10px 30px;
 			margin: 8px 0 8px 35px;
 			min-width: 216px;
 			float: right;
 			background: #ffffff;
 			border-radius: 100px;
 			text-align: center;
+			text-decoration: none;
+		}
+	}
+	.sticky-nav-links {
+		background: #00b7f2;
+		opacity: 0.9;
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				list-style: none;
+				display: inline-block;
+				a {
+					font-size: 12px;
+					color: #ffffff;
+					letter-spacing: 0.75px;
+					padding: 10px 8px;
+					display: block;
+				}
+			}
 		}
 	}
 }
