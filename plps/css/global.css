@@ -142,6 +142,20 @@ Header styling
   box-shadow: 0 0 29px rgba(0, 0, 0, 0.22);
 }
 
+aside .welcome-message {
+  font-size: 28px;
+  color: #666666;
+  background: #ffffff;
+  padding: 40px 0 35px 30px;
+}
+aside .accordion .accordion-navigation > a {
+  background: #ffffff;
+  color: #113779;
+  font-size: 25px;
+  border-top: 2px solid #d7e4f2;
+  padding: 35px 0 35px 30px;
+}
+
 .header .primary-nav {
   background: #E5F8FE;
   height: 130px;
@@ -194,10 +208,12 @@ Header styling
 }
 .header .primary-nav .utility-nav li.language .select-language {
   position: absolute;
+  z-index: 99;
   top: -10px;
   left: -15px;
   padding: 10px 15px;
-  width: 120px;
+  width: 150px;
+  display: none;
   background: #ffffff;
   -webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.4);
@@ -236,7 +252,6 @@ Header styling
 }
 .header .sub-nav {
   background: #ffffff;
-  height: 53px;
   overflow: initial;
   margin: 0;
   padding: 0;
@@ -261,6 +276,9 @@ Header styling
 }
 .header .sub-nav a:hover {
   color: #00b7f2;
+}
+.header .sub-nav p {
+  padding: 16px 30px;
 }
 .header .sub-nav p .points {
   color: #0072bc;
@@ -322,8 +340,7 @@ Header styling
   box-shadow: none;
 }
 .header .sticky-nav {
-  background: #00b6f0;
-  opacity: 0.9;
+  background: rgba(0, 182, 240, 0.9);
 }
 .header .sticky-nav h2 {
   color: #ffffff;
@@ -345,8 +362,7 @@ Header styling
   text-decoration: none;
 }
 .header .sticky-nav-links {
-  background: #00b7f2;
-  opacity: 0.9;
+  background: rgba(0, 183, 242, 0.9);
 }
 .header .sticky-nav-links ul {
   padding: 0;
