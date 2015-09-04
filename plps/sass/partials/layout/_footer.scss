@@ -21,12 +21,27 @@ footer {
 					font-size: 13px;
 					color: #012d74;
 					font-family: "OmnesHuggiesMedium";
+					&:hover {
+						color: #8cb6e0;
+					}
 				}
 			}
 			&.inline {
 				li {
-					margin: 16px 16px 0 0;
+					margin: 0 16px 16px 0px;
 				}
+			}
+		}
+		.button {
+			background: #ffffff;
+			border: 2px solid #00b7f2;
+			font-size: 12px;
+			color: #00b7f2;
+			padding: 11px 16px;
+			font-family: "OmnesHuggiesMedium";
+			&:hover {
+				background: #00b7f2;
+				color: #ffffff;
 			}
 		}
 	}
@@ -35,6 +50,20 @@ footer {
 		background: #eaf7fe;
 		.footer-info-header {
 			background: #d5f0fc;
+			margin-top: 40px;
+			a {
+				margin-left: 25px;
+				img {
+					margin-top: 12px;
+				}
+			}
+			p {
+				font-size: 13px;
+				font-family: "OmnesHuggiesSemiBold";
+				padding: 15px 0;
+				margin: 0;
+				color: #012d74;
+			}
 		}
 		.footer-info-body {
 			padding: 40px 0;
@@ -42,6 +71,17 @@ footer {
 				font-size: 11px;
 				font-family: "OmnesHuggiesMedium";
 				margin: 8px 0;
+			}
+			.copyright {
+				a {
+					margin-right: 25px;
+				}
+				img {
+					vertical-align: bottom;
+				}
+				p {
+					margin-top: 30px;
+				}
 			}
 		}
 	}
