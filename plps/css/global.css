@@ -4,8 +4,8 @@ Main sass file used for imports
 /*************************************
 Variables used across the website
 *************************************/
-.sprite-sprite, .sprite-close, .sprite-facebook, .sprite-google, .sprite-instagram, .sprite-pinterest, .sprite-search_icon, .sprite-twitter, .sprite-youtube {
-  background-image: url('../img/sprite-s5fe69d581e.png');
+.sprite-sprite, .sprite-close, .sprite-facebook, .sprite-google, .sprite-instagram, .sprite-pinterest, .sprite-search-icon, .sprite-twitter, .sprite-youtube {
+  background-image: url('../img/sprite-sb446f5266c.png');
   background-repeat: no-repeat;
 }
 
@@ -42,7 +42,7 @@ Variables used across the website
   width: 32px;
 }
 
-.sprite-search_icon {
+.sprite-search-icon {
   background-position: 0 -228px;
   height: 19px;
   width: 18px;
@@ -63,6 +63,7 @@ Variables used across the website
 /*************************************
 Header styling
 *************************************/
+.header-mobile,
 .header {
   font-family: "OmnesHuggies";
   position: fixed;
@@ -71,6 +72,13 @@ Header styling
   right: 0;
   z-index: 100;
 }
+
+.header-mobile {
+  background: #e9f8fe;
+  height: 50px;
+  box-shadow: 0 0 29px rgba(0, 0, 0, 0.22);
+}
+
 .header .primary-nav {
   background: #E5F8FE;
   height: 130px;
@@ -317,6 +325,11 @@ Header styling
 /*************************************
 Main layout styling
 *************************************/
+html, body {
+  min-height: 100% !important;
+  height: 100%;
+}
+
 body {
   line-height: 1;
 }
@@ -343,6 +356,26 @@ ul.inline li {
   padding: 40px 0;
 }
 
+@media screen and (max-width: 640px) {
+  body {
+    padding-top: 0 !important;
+  }
+
+  .off-canvas-wrap {
+    height: 100%;
+  }
+  .off-canvas-wrap .inner-wrap {
+    height: 100%;
+  }
+  .off-canvas-wrap .inner-wrap .content {
+    height: 100%;
+    overflow: auto;
+  }
+
+  footer {
+    display: none;
+  }
+}
 /*************************************
 Footer styling
 *************************************/
