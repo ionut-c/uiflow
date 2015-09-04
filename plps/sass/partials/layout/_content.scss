@@ -1,6 +1,10 @@
 /*************************************
 Main layout styling
 *************************************/
+html, body {
+    min-height: 100% !important;
+    height: 100%;
+}
 body {
 	line-height: 1;
 }
@@ -25,4 +29,23 @@ ul {
 
 .content {
 	padding: 40px 0;
+}
+
+@media screen and (max-width: 640px) {
+	body {
+		padding-top: 0 !important;
+	}
+	.off-canvas-wrap {
+		height: 100%;
+		.inner-wrap {
+			height: 100%;
+			.content {
+				height: 100%;
+				overflow: auto;
+			}
+		}
+	}
+	footer {
+		display: none;
+	}
 }

@@ -2,13 +2,23 @@
 Header styling
 *************************************/
 
-.header { 
+.header-mobile,
+.header {
 	font-family: "OmnesHuggies";
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 100;
+}
+
+.header-mobile {
+	background: #e9f8fe;
+	height: 50px;
+	box-shadow: 0 0 29px rgba(0,0,0,.22);
+}
+
+.header { 
 	.primary-nav {
 		background: #E5F8FE;
 		height: 130px;
