@@ -11,17 +11,21 @@ $(document).ready(function() {
     	$(".search-form").hide();
     });
 
-    var headerComponent = new HeaderComponent();
+    // var headerComponent = new HeaderComponent();
 
     function HeaderComponent() {
         $component = $('body').find(".header");
         $body = $('body');
         
         function updateHeader() {
+            var factor = 0;
             if($(window).scrollTop() <= 64) {
-                $component.css("top", "-"+$(window).scrollTop()+"px");
-                $body.css("padding-top", ($component.height()-$(window).scrollTop())+"px");
+                var factor = $(window).scrollTop();
+            } else {
+                factor = 64;
             }
+            $component.css("top", "-"+factor+"px");
+            $body.css("padding-top", ($component.height()-factor)+"px");
         }
 
         function attachEvents() {

@@ -69,6 +69,7 @@ Header styling
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 .header .primary-nav {
   background: #E5F8FE;
@@ -336,6 +337,10 @@ ul.inline li {
   max-width: 1000px;
   margin: 0 10px;
   margin: 0 auto;
+}
+
+.content {
+  padding: 40px 0;
 }
 
 /*************************************
