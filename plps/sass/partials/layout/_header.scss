@@ -3,6 +3,7 @@ Header styling
 *************************************/
 
 .header {
+	font-family: "OmnesHuggies Regular";
 	.primary-nav {
 		background: #E5F8FE;
 		height: 130px;
@@ -40,6 +41,9 @@ Header styling
 					&:hover {
 						text-decoration: underline;
 					}
+					&.active {
+						color: #d92032;
+					}
 				}
 
 				&.language {
@@ -76,7 +80,8 @@ Header styling
 		.main-nav {
 			display: block;
 			float: right;
-			margin: 20px 0 0 30px;
+			margin: 20px 0 0;
+			clear: right;
 
 			li {
 				list-style: none;
@@ -84,6 +89,7 @@ Header styling
 				margin-left: 35px;
 
 				a {
+					font-family: "OmnesHuggiesMedium Regular";
 					font-size: 17px;
 					color: #0072bc;
 					text-decoration: none;
@@ -106,19 +112,33 @@ Header styling
 		overflow: initial;
 		margin: 0;
 		padding: 0;
+		-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+		-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+		box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
 
-		a {
+		a,
+		p {
 			font-size: 12px;
 			color: #666666;
 			letter-spacing: 1px;
-			padding: 19px 30px;
+			padding: 20px 30px;
+			margin: 0;
+			line-height: 1;
 			display: inline-block;
 			border-left: 1px solid #F3F3F3;
 			border-right: 1px solid #F3F3F3;
-			text-decoration: none;
+		}
 
+		a {
+			text-decoration: none;
 			&:hover {
 				color: #00b7f2;
+			}
+		}
+
+		p {
+			.points {
+				color: #0072bc;
 			}
 		}
 
@@ -145,6 +165,9 @@ Header styling
 		background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
 		background: linear-gradient(to bottom, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 20%, rgba(255,255,255,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff', GradientType=0 );
+		// -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+		// -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+		// box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
 
 		a {
 			display: inline-block;
