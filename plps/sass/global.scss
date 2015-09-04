@@ -6,7 +6,7 @@ Main sass file used for imports
 
 @import "compass/utilities/sprites";
 @import "sprite/*.png";
-@include all-sprite-sprites;
+@include all-sprite-sprites(true);
 
 @import "partials/layout/_header";
 @import "partials/layout/_content";
