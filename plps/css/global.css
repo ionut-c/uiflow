@@ -4,20 +4,60 @@ Main sass file used for imports
 /*************************************
 Variables used across the website
 *************************************/
-.sprite-sprite, .sprite-close, .sprite-search_icon {
-  background-image: url('/img/sprite-s85f603233f.png');
+.sprite-sprite, .sprite-close, .sprite-facebook, .sprite-google, .sprite-instagram, .sprite-pinterest, .sprite-search_icon, .sprite-twitter, .sprite-youtube {
+  background-image: url('../img/sprite-s5fe69d581e.png');
   background-repeat: no-repeat;
 }
 
 .sprite-close {
   background-position: 0 0;
+  height: 50px;
+  width: 50px;
 }
 .sprite-close:hover, .sprite-close.close-hover {
   background-position: 0 -50px;
 }
 
-.sprite-search_icon {
+.sprite-facebook {
   background-position: 0 -100px;
+  height: 32px;
+  width: 32px;
+}
+
+.sprite-google {
+  background-position: 0 -132px;
+  height: 32px;
+  width: 32px;
+}
+
+.sprite-instagram {
+  background-position: 0 -164px;
+  height: 32px;
+  width: 32px;
+}
+
+.sprite-pinterest {
+  background-position: 0 -196px;
+  height: 32px;
+  width: 32px;
+}
+
+.sprite-search_icon {
+  background-position: 0 -228px;
+  height: 19px;
+  width: 18px;
+}
+
+.sprite-twitter {
+  background-position: 0 -247px;
+  height: 32px;
+  width: 32px;
+}
+
+.sprite-youtube {
+  background-position: 0 -279px;
+  height: 32px;
+  width: 73px;
 }
 
 /*************************************
@@ -281,6 +321,12 @@ ul {
   padding: 0;
   margin: 0;
 }
+ul.inline {
+  font-size: 0;
+}
+ul.inline li {
+  display: inline-block;
+}
 
 .wrapper {
   max-width: 1000px;
@@ -294,8 +340,10 @@ Footer styling
 footer .footer-links {
   background: #ffffff;
 }
-footer .footer-links .footer-header {
+footer .footer-links .footer-links-header {
   border-bottom: 1px solid #ccc;
+  padding: 40px 0 16px 0;
+  margin-bottom: 24px;
 }
 footer .footer-links .footer-heading {
   color: #012d74;
@@ -307,9 +355,20 @@ footer .footer-links ul li a {
   color: #012d74;
   font-family: "OmnesHuggiesMedium";
 }
-footer .footer-info-header {
-  background: #d5f0fc;
+footer .footer-links ul.inline li {
+  margin: 16px 16px 0 0;
 }
 footer .footer-info {
   background: #eaf7fe;
+}
+footer .footer-info .footer-info-header {
+  background: #d5f0fc;
+}
+footer .footer-info .footer-info-body {
+  padding: 40px 0;
+}
+footer .footer-info .footer-info-body p {
+  font-size: 11px;
+  font-family: "OmnesHuggiesMedium";
+  margin: 8px 0;
 }

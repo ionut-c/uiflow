@@ -5,8 +5,10 @@ Footer styling
 footer {
 	.footer-links {
 		background: #ffffff;
-		.footer-header {
+		.footer-links-header {
 			border-bottom: 1px solid #ccc;
+			padding: 40px 0 16px 0;
+			margin-bottom: 24px;
 		}
 		.footer-heading {
 			color: #012d74;
@@ -21,14 +23,26 @@ footer {
 					font-family: "OmnesHuggiesMedium";
 				}
 			}
+			&.inline {
+				li {
+					margin: 16px 16px 0 0;
+				}
+			}
 		}
-	}
-
-	.footer-info-header {
-		background: #d5f0fc;
 	}
 
 	.footer-info {
 		background: #eaf7fe;
+		.footer-info-header {
+			background: #d5f0fc;
+		}
+		.footer-info-body {
+			padding: 40px 0;
+			p {
+				font-size: 11px;
+				font-family: "OmnesHuggiesMedium";
+				margin: 8px 0;
+			}
+		}
 	}
 }

@@ -9,6 +9,12 @@ ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+	&.inline {
+		font-size: 0;
+		li {
+			display: inline-block;
+		}
+	}
 }
 
 .wrapper {
