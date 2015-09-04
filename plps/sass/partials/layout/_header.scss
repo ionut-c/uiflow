@@ -27,13 +27,18 @@ Header styling
 			float: left;
 			margin-top: 28px;
 
+			a {
+				display: inline-block;
+			}
+
 			.logo {
 				display: block;
-				margin-top: 15px;
+				margin-top: 10px;
 			}
 
 			.first {
 				margin-right: 20px;
+				vertical-align: top;
 				img {
 					vertical-align: top;
 				}

@@ -4,13 +4,8 @@ Main sass file used for imports
 /*************************************
 Variables used across the website
 *************************************/
-<<<<<<< HEAD
-.sprite-sprite, .sprite-adchoices, .sprite-close, .sprite-facebook, .sprite-google, .sprite-huggies_logo_footer, .sprite-instagram, .sprite-pinterest, .sprite-pullups_logo_footer, .sprite-search_icon, .sprite-twitter, .sprite-youtube {
-  background-image: url('../img/sprite-sfbfe2477de.png');
-=======
-.sprite-sprite, .sprite-close, .sprite-facebook, .sprite-google, .sprite-instagram, .sprite-pinterest, .sprite-search-icon, .sprite-twitter, .sprite-youtube {
-  background-image: url('../img/sprite-sb446f5266c.png');
->>>>>>> d54296ba5f7941e7f2896ad416aaff4779f60e53
+.sprite-sprite, .sprite-adchoices, .sprite-close, .sprite-facebook, .sprite-google, .sprite-huggies_logo_footer, .sprite-huggies_logo_header, .sprite-instagram, .sprite-pinterest, .sprite-pullUps_logo_header, .sprite-pullups_logo_footer, .sprite-search-icon, .sprite-twitter, .sprite-youtube {
+  background-image: url('../img/sprite-se6e1192d84.png');
   background-repeat: no-repeat;
 }
 
@@ -59,26 +54,44 @@ Variables used across the website
   background-position: 0 0;
 }
 
-.sprite-instagram {
+.sprite-huggies_logo_header {
   background-position: 0 -313px;
+  height: 14px;
+  width: 59px;
+}
+.sprite-huggies_logo_header:hover, .sprite-huggies_logo_header.huggies_logo_header-hover {
+  background-position: 0 -327px;
+}
+
+.sprite-instagram {
+  background-position: 0 -341px;
   height: 32px;
   width: 32px;
 }
 .sprite-instagram:hover, .sprite-instagram.instagram-hover {
-  background-position: 0 -345px;
+  background-position: 0 -373px;
 }
 
 .sprite-pinterest {
-  background-position: 0 -377px;
+  background-position: 0 -405px;
   height: 32px;
   width: 32px;
 }
 .sprite-pinterest:hover, .sprite-pinterest.pinterest-hover {
-  background-position: 0 -409px;
+  background-position: 0 -437px;
+}
+
+.sprite-pullUps_logo_header {
+  background-position: 0 -469px;
+  height: 23px;
+  width: 50px;
+}
+.sprite-pullUps_logo_header:hover, .sprite-pullUps_logo_header.pullUps_logo_header-hover {
+  background-position: 0 -492px;
 }
 
 .sprite-pullups_logo_footer {
-  background-position: 0 -441px;
+  background-position: 0 -515px;
   height: 27px;
   width: 53px;
 }
@@ -86,33 +99,28 @@ Variables used across the website
   background-position: 0 -14px;
 }
 
-<<<<<<< HEAD
-.sprite-search_icon {
-  background-position: 0 -468px;
-=======
 .sprite-search-icon {
-  background-position: 0 -228px;
->>>>>>> d54296ba5f7941e7f2896ad416aaff4779f60e53
+  background-position: 0 -542px;
   height: 19px;
   width: 18px;
 }
 
 .sprite-twitter {
-  background-position: 0 -487px;
+  background-position: 0 -561px;
   height: 32px;
   width: 32px;
 }
 .sprite-twitter:hover, .sprite-twitter.twitter-hover {
-  background-position: 0 -519px;
+  background-position: 0 -593px;
 }
 
 .sprite-youtube {
-  background-position: 0 -551px;
+  background-position: 0 -625px;
   height: 32px;
   width: 73px;
 }
 .sprite-youtube:hover, .sprite-youtube.youtube-hover {
-  background-position: 0 -583px;
+  background-position: 0 -657px;
 }
 
 /*************************************
@@ -142,12 +150,16 @@ Header styling
   float: left;
   margin-top: 28px;
 }
+.header .primary-nav .logos a {
+  display: inline-block;
+}
 .header .primary-nav .logos .logo {
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .header .primary-nav .logos .first {
   margin-right: 20px;
+  vertical-align: top;
 }
 .header .primary-nav .logos .first img {
   vertical-align: top;
