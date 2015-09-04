@@ -65,6 +65,10 @@ Header styling
 *************************************/
 .header {
   font-family: "OmnesHuggies Regular";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .header .primary-nav {
   background: #E5F8FE;
