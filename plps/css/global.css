@@ -4,49 +4,73 @@ Main sass file used for imports
 /*************************************
 Variables used across the website
 *************************************/
-.sprite-sprite, .sprite-adchoices, .sprite-close, .sprite-facebook, .sprite-google, .sprite-huggies_logo_footer, .sprite-huggies_logo_header, .sprite-instagram, .sprite-pinterest, .sprite-pullUps_logo_header, .sprite-pullups_logo_footer, .sprite-search-icon, .sprite-twitter, .sprite-youtube {
-  background-image: url('../img/sprite-se6e1192d84.png');
+.sprite-sprite, .sprite-adchoices-mobile, .sprite-adchoices, .sprite-close, .sprite-facebook-xl, .sprite-facebook, .sprite-google-xl, .sprite-google, .sprite-huggies_logo_footer, .sprite-huggies_logo_header, .sprite-instagram-xl, .sprite-instagram, .sprite-pinterest-xl, .sprite-pinterest, .sprite-pullUps_logo_header, .sprite-pullups_logo_footer, .sprite-search-icon, .sprite-twitter-xl, .sprite-twitter, .sprite-youtube-xl, .sprite-youtube {
+  background-image: url('../img/sprite-s11a82e842d.png');
   background-repeat: no-repeat;
 }
 
-.sprite-adchoices {
+.sprite-adchoices-mobile {
   background-position: 0 -41px;
+  height: 36px;
+  width: 144px;
+}
+
+.sprite-adchoices {
+  background-position: 0 -77px;
   height: 15px;
   width: 75px;
 }
 .sprite-adchoices:hover, .sprite-adchoices.adchoices-hover {
-  background-position: 0 -56px;
+  background-position: 0 -92px;
 }
 
 .sprite-close {
-  background-position: 0 -71px;
+  background-position: 0 -107px;
   height: 50px;
   width: 50px;
 }
 .sprite-close:hover, .sprite-close.close-hover {
-  background-position: 0 -121px;
+  background-position: 0 -157px;
+}
+
+.sprite-facebook-xl {
+  background-position: 0 -207px;
+  height: 60px;
+  width: 60px;
+}
+.sprite-facebook-xl:hover, .sprite-facebook-xl.facebook-xl-hover {
+  background-position: 0 -267px;
 }
 
 .sprite-facebook {
-  background-position: 0 -171px;
+  background-position: 0 -327px;
   height: 32px;
   width: 32px;
 }
 .sprite-facebook:hover, .sprite-facebook.facebook-hover {
-  background-position: 0 -203px;
+  background-position: 0 -359px;
+}
+
+.sprite-google-xl {
+  background-position: 0 -391px;
+  height: 60px;
+  width: 60px;
+}
+.sprite-google-xl:hover, .sprite-google-xl.google-xl-hover {
+  background-position: 0 -451px;
 }
 
 .sprite-google {
-  background-position: 0 -235px;
+  background-position: 0 -511px;
   height: 32px;
   width: 32px;
 }
 .sprite-google:hover, .sprite-google.google-hover {
-  background-position: 0 -267px;
+  background-position: 0 -543px;
 }
 
 .sprite-huggies_logo_footer {
-  background-position: 0 -299px;
+  background-position: 0 -575px;
   height: 14px;
   width: 59px;
 }
@@ -55,43 +79,61 @@ Variables used across the website
 }
 
 .sprite-huggies_logo_header {
-  background-position: 0 -313px;
+  background-position: 0 -589px;
   height: 14px;
   width: 59px;
 }
 .sprite-huggies_logo_header:hover, .sprite-huggies_logo_header.huggies_logo_header-hover {
-  background-position: 0 -327px;
+  background-position: 0 -603px;
+}
+
+.sprite-instagram-xl {
+  background-position: 0 -617px;
+  height: 60px;
+  width: 60px;
+}
+.sprite-instagram-xl:hover, .sprite-instagram-xl.instagram-xl-hover {
+  background-position: 0 -677px;
 }
 
 .sprite-instagram {
-  background-position: 0 -341px;
+  background-position: 0 -737px;
   height: 32px;
   width: 32px;
 }
 .sprite-instagram:hover, .sprite-instagram.instagram-hover {
-  background-position: 0 -373px;
+  background-position: 0 -769px;
+}
+
+.sprite-pinterest-xl {
+  background-position: 0 -801px;
+  height: 60px;
+  width: 60px;
+}
+.sprite-pinterest-xl:hover, .sprite-pinterest-xl.pinterest-xl-hover {
+  background-position: 0 -861px;
 }
 
 .sprite-pinterest {
-  background-position: 0 -405px;
+  background-position: 0 -921px;
   height: 32px;
   width: 32px;
 }
 .sprite-pinterest:hover, .sprite-pinterest.pinterest-hover {
-  background-position: 0 -437px;
+  background-position: 0 -953px;
 }
 
 .sprite-pullUps_logo_header {
-  background-position: 0 -469px;
+  background-position: 0 -985px;
   height: 23px;
   width: 50px;
 }
 .sprite-pullUps_logo_header:hover, .sprite-pullUps_logo_header.pullUps_logo_header-hover {
-  background-position: 0 -492px;
+  background-position: 0 -1008px;
 }
 
 .sprite-pullups_logo_footer {
-  background-position: 0 -515px;
+  background-position: 0 -1031px;
   height: 27px;
   width: 53px;
 }
@@ -100,27 +142,45 @@ Variables used across the website
 }
 
 .sprite-search-icon {
-  background-position: 0 -542px;
+  background-position: 0 -1058px;
   height: 19px;
   width: 18px;
 }
 
+.sprite-twitter-xl {
+  background-position: 0 -1077px;
+  height: 60px;
+  width: 60px;
+}
+.sprite-twitter-xl:hover, .sprite-twitter-xl.twitter-xl-hover {
+  background-position: 0 -1137px;
+}
+
 .sprite-twitter {
-  background-position: 0 -561px;
+  background-position: 0 -1197px;
   height: 32px;
   width: 32px;
 }
 .sprite-twitter:hover, .sprite-twitter.twitter-hover {
-  background-position: 0 -593px;
+  background-position: 0 -1229px;
+}
+
+.sprite-youtube-xl {
+  background-position: 0 -1261px;
+  height: 60px;
+  width: 137px;
+}
+.sprite-youtube-xl:hover, .sprite-youtube-xl.youtube-xl-hover {
+  background-position: 0 -1321px;
 }
 
 .sprite-youtube {
-  background-position: 0 -625px;
+  background-position: 0 -1381px;
   height: 32px;
   width: 73px;
 }
 .sprite-youtube:hover, .sprite-youtube.youtube-hover {
-  background-position: 0 -657px;
+  background-position: 0 -1413px;
 }
 
 /*************************************
@@ -136,10 +196,50 @@ Header styling
   z-index: 100;
 }
 
-.header-mobile {
+nav.tab-bar {
   background: #e9f8fe;
-  height: 50px;
+  height: 97px;
   box-shadow: 0 0 29px rgba(0, 0, 0, 0.22);
+  padding-top: 20px;
+}
+nav.tab-bar .logo {
+  display: inline-block;
+}
+nav.tab-bar .menu-icon span::after {
+  box-shadow: 0px 0px 0px 3px #119bdf, 0px 17px 0px 3px #119bdf, 0px 34px 0px 3px #119bdf;
+  width: 46px;
+}
+
+.move-right > .inner-wrap {
+  -webkit-transform: translate3d(86%, 0px, 0px);
+  -moz-transform: translate3d(86%, 0px, 0px);
+  -o-transform: translate3d(86%, 0px, 0px);
+  -ms-transform: translate3d(86%, 0px, 0px);
+  transform: translate3d(86%, 0px, 0px);
+}
+.move-right .exit-off-canvas {
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.move-right nav.tab-bar .menu-icon span::after {
+  content: "+";
+  box-shadow: none;
+  height: auto;
+  font-size: 60px;
+  color: #119bdf;
+  text-indent: 0;
+  line-height: 38px;
+  transform: rotate(45deg);
+}
+
+.left-off-canvas-menu {
+  width: 86%;
+}
+
+.left-small {
+  display: inline-block;
+  border: none;
+  top: 18px;
+  left: 5px;
 }
 
 .left-off-canvas-menu {
@@ -201,6 +301,9 @@ Header styling
   font-family: FontAwesome;
   float: right;
 }
+.left-off-canvas-menu .large-menu a:first-child {
+  border-top: 2px solid #d7e4f2;
+}
 .left-off-canvas-menu .medium-menu {
   background: #eaf7fe;
 }
@@ -211,6 +314,9 @@ Header styling
   display: block;
   border-bottom: 2px solid #d7e4f2;
 }
+.left-off-canvas-menu .medium-menu li:first-child a {
+  border-top: 2px solid #d7e4f2;
+}
 .left-off-canvas-menu .small-menu a {
   font-size: 16px;
   padding: 20px 30px;
@@ -218,13 +324,21 @@ Header styling
   display: block;
   border-bottom: 2px solid #d7e4f2;
 }
+.left-off-canvas-menu .small-menu li:first-child a {
+  border-top: 2px solid #d7e4f2;
+}
 .left-off-canvas-menu .social {
   text-align: center;
-  padding: 58px 100px 0;
+  padding: 16px 0 0 0;
+}
+.left-off-canvas-menu .social.last {
+  padding: 0 0 16px 0;
 }
 .left-off-canvas-menu .social li {
-  margin-right: 40px;
-  margin-bottom: 50px;
+  margin: 24px;
+}
+.left-off-canvas-menu p {
+  color: #343434;
 }
 
 .header .primary-nav {
@@ -476,6 +590,19 @@ Header styling
   padding-right: 30px;
 }
 
+@media screen and (min-width: 641px) {
+  .move-right > .inner-wrap {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  .exit-off-canvas {
+    display: none;
+  }
+}
 /*************************************
 Main layout styling
 *************************************/
@@ -500,6 +627,19 @@ ul.inline li {
   display: inline-block;
 }
 
+a {
+  color: #387abe;
+}
+
+.space-v {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+a.space-v {
+  display: inline-block;
+}
+
 .wrapper {
   max-width: 1000px;
   margin: 0 10px;
@@ -508,6 +648,24 @@ ul.inline li {
 
 .content {
   padding: 40px 0;
+}
+
+.button.empty {
+  width: auto;
+  display: block;
+  text-align: left;
+  margin: 32px 3%;
+  border: 1px solid #8EB3DA;
+  background: transparent none repeat scroll 0% 0%;
+  color: #012d74;
+  -moz-transition: background 0.2s ease-in 0s;
+  -webkit-transition: background 0.2s ease-in 0s;
+  -ms-transition: background 0.2s ease-in 0s;
+  -o-transition: background 0.2s ease-in 0s;
+  transition: background 0.2s ease-in 0s;
+}
+.button.empty:hover {
+  background: rgba(0, 0, 0, 0.03);
 }
 
 @media screen and (max-width: 640px) {

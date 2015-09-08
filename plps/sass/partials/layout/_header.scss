@@ -12,10 +12,58 @@ Header styling
 	z-index: 100;
 }
 
-.header-mobile {
+nav.tab-bar {
 	background: #e9f8fe;
-	height: 50px;
+	height: 97px;
 	box-shadow: 0 0 29px rgba(0,0,0,.22);
+	padding-top: 20px;
+	.logo {
+		display: inline-block;
+	}
+	.menu-icon {
+		span::after {
+			box-shadow: 0px 0px 0px 3px #119bdf, 0px 17px 0px 3px #119bdf, 0px 34px 0px 3px #119bdf;
+			width: 46px;
+		}
+	}
+}
+
+.move-right {
+	> .inner-wrap {
+		-webkit-transform: translate3d(86%, 0px, 0px);
+		-moz-transform: translate3d(86%, 0px, 0px);
+		-o-transform: translate3d(86%, 0px, 0px);
+		-ms-transform: translate3d(86%, 0px, 0px);
+		transform: translate3d(86%, 0px, 0px);
+	}
+	.exit-off-canvas {
+		box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+	}
+	nav.tab-bar {
+		.menu-icon {
+			span::after {
+				content: "+";
+				box-shadow: none;
+				height: auto;
+				font-size: 60px;
+				color: #119bdf;
+				text-indent: 0;
+				line-height: 38px;
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+
+.left-off-canvas-menu {
+	width: 86%;
+}
+
+.left-small {
+	display: inline-block;
+	border: none;
+	top: 18px;
+	left: 5px;
 }
 
 .left-off-canvas-menu {
@@ -80,6 +128,9 @@ Header styling
 				font-family: FontAwesome;
 				float: right;
 			}
+			&:first-child {
+				border-top: 2px solid #d7e4f2;
+			}
 		}
 	}
 	.medium-menu {
@@ -91,6 +142,11 @@ Header styling
 			display: block;
 			border-bottom: 2px solid #d7e4f2;
 		}
+		li:first-child {
+			a {
+				border-top: 2px solid #d7e4f2;
+			}
+		}
 	}
 	.small-menu {
 		a {
@@ -100,14 +156,24 @@ Header styling
 			display: block;
 			border-bottom: 2px solid #d7e4f2;
 		}
+		li:first-child {
+			a {
+				border-top: 2px solid #d7e4f2;
+			}
+		}
 	}
 	.social {
 		text-align: center;
-		padding: 58px 100px 0;
-		li {
-			margin-right: 40px;
-			margin-bottom: 50px;
+		padding: 16px 0 0 0;
+		&.last {
+			padding: 0 0 16px 0;
 		}
+		li {
+			margin: 24px;
+		}
+	}
+	p {
+		color: #343434;
 	}
 }
 
@@ -397,5 +463,20 @@ Header styling
 				}
 			}
 		}
+	}
+}
+
+@media screen and (min-width: 641px) {
+	.move-right {
+		> .inner-wrap {
+			-webkit-transform: translate3d(0px, 0px, 0px);
+			-o-transform: translate3d(0px, 0px, 0px);
+			-ms-transform: translate3d(0px, 0px, 0px);
+			-moz-transform: translate3d(0px, 0px, 0px);
+			transform: translate3d(0px, 0px, 0px);
+		}
+	}
+	.exit-off-canvas {
+		display: none;
 	}
 }
