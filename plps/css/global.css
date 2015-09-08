@@ -142,18 +142,89 @@ Header styling
   box-shadow: 0 0 29px rgba(0, 0, 0, 0.22);
 }
 
-aside .welcome-message {
+.left-off-canvas-menu {
+  background: #ffffff;
+}
+.left-off-canvas-menu .welcome-message {
   font-size: 28px;
   color: #666666;
   background: #ffffff;
   padding: 40px 0 35px 30px;
 }
-aside .accordion .accordion-navigation > a {
+.left-off-canvas-menu .accordion .accordion-navigation > a {
   background: #ffffff;
   color: #113779;
   font-size: 25px;
   border-top: 2px solid #d7e4f2;
-  padding: 35px 0 35px 30px;
+  padding: 35px 30px;
+}
+.left-off-canvas-menu .accordion .accordion-navigation > a::after {
+  content: "\f067";
+  font-family: FontAwesome;
+  float: right;
+  font-size: 20px;
+}
+.left-off-canvas-menu .accordion .accordion-navigation.active > a::after {
+  content: "\f068";
+}
+.left-off-canvas-menu .accordion .accordion-navigation .content {
+  padding: 0;
+}
+.left-off-canvas-menu .accordion .accordion-navigation .content ul {
+  margin: 0;
+}
+.left-off-canvas-menu .accordion .accordion-navigation .content a {
+  padding: 35px 25px 35px 70px;
+  color: #012d74;
+  display: block;
+}
+.left-off-canvas-menu .accordion .accordion-navigation .content a:hover {
+  background: #f4f5f5;
+}
+.left-off-canvas-menu .accordion .accordion-navigation .content a::after {
+  content: "\f105";
+  font-family: FontAwesome;
+  float: right;
+}
+.left-off-canvas-menu .large-menu {
+  background: #eaf7fe;
+}
+.left-off-canvas-menu .large-menu a {
+  font-size: 25px;
+  padding: 30px 30px;
+  color: #012d74;
+  display: block;
+  border-bottom: 2px solid #d7e4f2;
+}
+.left-off-canvas-menu .large-menu a::after {
+  content: "\f105";
+  font-family: FontAwesome;
+  float: right;
+}
+.left-off-canvas-menu .medium-menu {
+  background: #eaf7fe;
+}
+.left-off-canvas-menu .medium-menu a {
+  font-size: 22px;
+  padding: 20px 30px;
+  color: #012d74;
+  display: block;
+  border-bottom: 2px solid #d7e4f2;
+}
+.left-off-canvas-menu .small-menu a {
+  font-size: 16px;
+  padding: 20px 30px;
+  color: #012d74;
+  display: block;
+  border-bottom: 2px solid #d7e4f2;
+}
+.left-off-canvas-menu .social {
+  text-align: center;
+  padding: 58px 100px 0;
+}
+.left-off-canvas-menu .social li {
+  margin-right: 40px;
+  margin-bottom: 50px;
 }
 
 .header .primary-nav {

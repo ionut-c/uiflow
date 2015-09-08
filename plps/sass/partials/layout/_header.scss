@@ -18,7 +18,8 @@ Header styling
 	box-shadow: 0 0 29px rgba(0,0,0,.22);
 }
 
-aside {
+.left-off-canvas-menu {
+	background: #ffffff;
 	.welcome-message {
 		font-size: 28px;
 		color: #666666;
@@ -32,8 +33,80 @@ aside {
 				color: #113779;
 				font-size: 25px;
 				border-top: 2px solid #d7e4f2;
-				padding: 35px 0 35px 30px;
+				padding: 35px 30px;
+				&::after {
+					content: "\f067";
+					font-family: FontAwesome;
+					float: right;
+					font-size: 20px;
+				}
 			}
+			&.active {
+				& > a::after {
+					content: "\f068";
+				}
+			}
+			.content {
+				padding: 0;
+				ul {
+					margin: 0;
+				}
+				a {
+					padding: 35px 25px 35px 70px;
+					color: #012d74;
+					display: block;
+					&:hover {
+						background: #f4f5f5;
+					}
+					&::after {
+						content: "\f105";
+						font-family: FontAwesome;
+						float: right;
+					}
+				}
+			}
+		}
+	}
+	.large-menu {
+		background: #eaf7fe;
+		a {
+			font-size: 25px;
+			padding: 30px 30px;
+			color: #012d74;
+			display: block;
+			border-bottom: 2px solid #d7e4f2;
+			&::after {
+				content: "\f105";
+				font-family: FontAwesome;
+				float: right;
+			}
+		}
+	}
+	.medium-menu {
+		background: #eaf7fe;
+		a {
+			font-size: 22px;
+			padding: 20px 30px;
+			color: #012d74;
+			display: block;
+			border-bottom: 2px solid #d7e4f2;
+		}
+	}
+	.small-menu {
+		a {
+			font-size: 16px;
+			padding: 20px 30px;
+			color: #012d74;
+			display: block;
+			border-bottom: 2px solid #d7e4f2;
+		}
+	}
+	.social {
+		text-align: center;
+		padding: 58px 100px 0;
+		li {
+			margin-right: 40px;
+			margin-bottom: 50px;
 		}
 	}
 }
