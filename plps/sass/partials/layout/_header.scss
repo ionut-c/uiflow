@@ -69,19 +69,19 @@ nav.tab-bar {
 .left-off-canvas-menu {
 	background: #ffffff;
 	.welcome-message {
-		font-size: 28px;
+		font-size: 14px;
 		color: #666666;
 		background: #ffffff;
-		padding: 40px 0 35px 30px;
+		padding: 20px 0 20px 15px;
 	}
 	.accordion {
 		.accordion-navigation {
 			& > a {
 				background: #ffffff;
 				color: #113779;
-				font-size: 25px;
+				font-size: 20px;
 				border-top: 2px solid #d7e4f2;
-				padding: 35px 30px;
+				padding: 20px 15px;
 				&::after {
 					content: "\f067";
 					font-family: FontAwesome;
@@ -100,7 +100,7 @@ nav.tab-bar {
 					margin: 0;
 				}
 				a {
-					padding: 35px 25px 35px 70px;
+					padding: 16px 15px 16px 35px;
 					color: #012d74;
 					display: block;
 					&:hover {
@@ -118,8 +118,8 @@ nav.tab-bar {
 	.large-menu {
 		background: #eaf7fe;
 		a {
-			font-size: 25px;
-			padding: 30px 30px;
+			font-size: 14px;
+			padding: 20px;
 			color: #012d74;
 			display: block;
 			border-bottom: 2px solid #d7e4f2;
